@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-03T20:51:13 IDT" name="Default suite" finished-at="2026-06-03T20:51:19 IDT" duration-ms="6464">
+  <suite started-at="2026-06-03T21:24:15 IDT" name="Default suite" finished-at="2026-06-03T21:24:23 IDT" duration-ms="7593">
     <groups>
     </groups>
-    <test started-at="2026-06-03T20:51:13 IDT" name="Default test" finished-at="2026-06-03T20:51:19 IDT" duration-ms="6464">
+    <test started-at="2026-06-03T21:24:15 IDT" name="Default test" finished-at="2026-06-03T21:24:23 IDT" duration-ms="7593">
       <class name="solo.fadi.imdb_automation_project.SearchWorkflowTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@4c371370]" started-at="2026-06-03T20:51:13 IDT" name="setUp" finished-at="2026-06-03T20:51:14 IDT" duration-ms="1154" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@128d2484]" started-at="2026-06-03T21:24:16 IDT" name="setUp" finished-at="2026-06-03T21:24:17 IDT" duration-ms="1232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="prepareTestEnvironment()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@4c371370]" started-at="2026-06-03T20:51:14 IDT" name="prepareTestEnvironment" finished-at="2026-06-03T20:51:15 IDT" duration-ms="1205" status="PASS">
+        <test-method is-config="true" signature="prepareTestEnvironment()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@128d2484]" started-at="2026-06-03T21:24:17 IDT" name="prepareTestEnvironment" finished-at="2026-06-03T21:24:19 IDT" duration-ms="1824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepareTestEnvironment -->
-        <test-method signature="testInvalidSearchQuery()[pri:5, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@4c371370]" started-at="2026-06-03T20:51:15 IDT" name="testInvalidSearchQuery" finished-at="2026-06-03T20:51:19 IDT" duration-ms="3975" status="PASS">
+        <test-method signature="testInvalidSearchQuery()[pri:5, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@128d2484]" started-at="2026-06-03T21:24:19 IDT" name="testInvalidSearchQuery" finished-at="2026-06-03T21:24:23 IDT" duration-ms="4394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidSearchQuery -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@4c371370]" started-at="2026-06-03T20:51:19 IDT" name="tearDown" finished-at="2026-06-03T20:51:19 IDT" duration-ms="100" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@128d2484]" started-at="2026-06-03T21:24:23 IDT" name="tearDown" finished-at="2026-06-03T21:24:23 IDT" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

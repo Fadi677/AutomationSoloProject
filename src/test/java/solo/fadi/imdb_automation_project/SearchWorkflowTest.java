@@ -2,9 +2,11 @@ package solo.fadi.imdb_automation_project;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.List;
 
 public class SearchWorkflowTest extends BaseTest {
@@ -17,15 +19,36 @@ public class SearchWorkflowTest extends BaseTest {
         imdb.navigateToHome();
     }
 	
+	private String[] getCsvRow(int rowIndex) {
+	    String csvPath = "search_data.csv";
+	    int currentIdx = 0;
+	    
+	    try (BufferedReader br = new BufferedReader(new FileReader(csvPath))) {
+	        String line;
+	        while ((line = br.readLine()) != null) {
+	            if (currentIdx == rowIndex) {
+	                return line.split(",");
+	            }
+	            currentIdx++;
+	        }
+	    } catch (IOException e) {
+	        Assert.fail("Failed to read test data file: " + e.getMessage());
+	    }
+	    throw new IllegalArgumentException("Row index " + rowIndex + " not found in CSV.");
+	}
 	
-	//All Positive
+	// 1. All Positive
     @Test(priority = 1)
     public void testHappyPathSearch() {
-        imdb.searchForMovie("Inception");
+        String[] data = getCsvRow(1);
+        String query = data[1];
+        String expected = data[2];
+
+        imdb.searchForMovie(query);
         imdb.clickFirstSearchResult();
         
         String actualTitle = imdb.getMovieTitleText();
-        Assert.assertTrue(actualTitle.contains("Inception"), "Title validation failed!");
+        Assert.assertTrue(actualTitle.contains(expected), "Title validation failed!");
     }
 
     //Case Insensitivity CHeck
@@ -42,7 +65,6 @@ public class SearchWorkflowTest extends BaseTest {
     @Test(priority = 3)
     public void testPartialKeywordSearch() {
         imdb.searchForMovie("Incept");
-        
         List<WebElement> results = imdb.getSearchResultElements();
         Assert.assertTrue(results.size() > 0, "No results returned for partial keyword query!");
         
@@ -63,9 +85,11 @@ public class SearchWorkflowTest extends BaseTest {
     // Searching for non existent movie
     @Test(priority = 5)
     public void testInvalidSearchQuery() {
+    	List<WebElement> results = new java.util.ArrayList<>();
+        results.clear();
         imdb.searchForMovie("xyzqwe123456789");
-        List<WebElement> results = imdb.getSearchResultElements();
-        Assert.assertTrue(results.isEmpty(), "Expected 0 search results for a non-existent movie, but the list was not empty!");
+        results = imdb.getSearchResultElements();
         System.out.println(results);
+        Assert.assertTrue(results.isEmpty(), "Expected 0 search results for a non-existent movie, but the list was not empty!");
     }
 }

@@ -1,0 +1,6 @@
+scenario,searchQuery,expectedValue,searchType
+Happy Path,Inception,Inception,exact
+Case Insensitive,iNcEpTiOn,Inception,caseInsensitive
+Partial Keyword,Incept,Incept,partial
+Special Characters,Se7en,Seven,special
+Invalid Query,xyzqwe123456789,0,invalid

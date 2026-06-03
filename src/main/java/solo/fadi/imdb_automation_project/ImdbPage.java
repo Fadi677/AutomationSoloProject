@@ -49,23 +49,25 @@ public class ImdbPage {
         searchInput.sendKeys(Keys.ENTER); 
     }
 
+    
     public void clickFirstSearchResult() {
-        WebElement firstResult = wait.until(ExpectedConditions.elementToBeClickable(firstSearchResultBy));
-        firstResult.click();
+        WebElement firstResult = wait.until(ExpectedConditions.presenceOfElementLocated(firstSearchResultBy));
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(firstResult)).click();
+        } catch (org.openqa.selenium.StaleElementReferenceException e) {
+            wait.until(ExpectedConditions.elementToBeClickable(firstSearchResultBy)).click();
+        }
     }
 
     public String getMovieTitleText() {
         WebElement title = wait.until(ExpectedConditions.visibilityOfElementLocated(movieTitleHeaderBy));
         return title.getText();
     }
-
+    
     
     public List<WebElement> getSearchResultElements() {
-        // Force Selenium to wait until the browser engine reports the page load lifecycle is complete
         wait.until(webDriver -> ((org.openqa.selenium.JavascriptExecutor) webDriver)
             .executeScript("return document.readyState").equals("complete"));
-        
-        // Once the DOM is ready, collect and return all matching elements
         return driver.findElements(allTitleResultsBy);
     }
 
@@ -78,7 +80,7 @@ public class ImdbPage {
         }
     }
 
-    //Actions for Workflow 2 Filtering and Sorting
+    //Workflow 2 Filtering and Sorting
     public void navigateToTop250Chart() {
         driver.get("https://www.imdb.com/chart/top/");
     }
