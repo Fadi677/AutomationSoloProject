@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="solo.fadi.imdb_automation_project.ImdbTests">
+      <class name="solo.fadi.imdb_automation_project.SearchWorkflowTest">
         <methods>
-          <include name="testChartSorting"/>
+          <include name="prepareTestEnvironment"/>
+          <include name="testInvalidSearchQuery"/>
           <include name="setUp"/>
-          <include name="testMovieSearchAndValidation"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- solo.fadi.imdb_automation_project.ImdbTests -->
+      </class> <!-- solo.fadi.imdb_automation_project.SearchWorkflowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
