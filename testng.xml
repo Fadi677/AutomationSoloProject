@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="IMDb Automation Test Suite">
+    
+    <test name="Workflow Executions">
+        <classes>
+            <class name="solo.fadi.imdb_automation_project.ChartSortingWorkflowTest" />
+            <class name="solo.fadi.imdb_automation_project.SearchWorkflowTest" />
+        </classes>
+    </test>
+    
+</suite>

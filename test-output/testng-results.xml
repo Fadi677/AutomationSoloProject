@@ -1,25 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-04T16:54:33 IDT" name="Default suite" finished-at="2026-06-04T16:54:44 IDT" duration-ms="11228">
+  <suite started-at="2026-06-04T17:09:19 IDT" name="IMDb Automation Test Suite" finished-at="2026-06-04T17:10:58 IDT" duration-ms="99617">
     <groups>
     </groups>
-    <test started-at="2026-06-04T16:54:33 IDT" name="Default test" finished-at="2026-06-04T16:54:44 IDT" duration-ms="11228">
-      <class name="solo.fadi.imdb_automation_project.ChartSortingWorkflowTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@459e9125]" started-at="2026-06-04T16:54:33 IDT" name="setUp" finished-at="2026-06-04T16:54:34 IDT" duration-ms="1241" status="PASS">
+    <test started-at="2026-06-04T17:09:19 IDT" name="Workflow Executions" finished-at="2026-06-04T17:10:58 IDT" duration-ms="99617">
+      <class name="solo.fadi.imdb_automation_project.SearchWorkflowTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:09 IDT" name="setUp" finished-at="2026-06-04T17:10:10 IDT" duration-ms="834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testDeepLinkNavigation()[pri:5, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@459e9125]" started-at="2026-06-04T16:54:34 IDT" name="testDeepLinkNavigation" finished-at="2026-06-04T16:54:44 IDT" duration-ms="9844" status="PASS">
+        <test-method is-config="true" signature="prepareTestEnvironment()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:10 IDT" name="prepareTestEnvironment" finished-at="2026-06-04T17:10:11 IDT" duration-ms="1126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTestEnvironment -->
+        <test-method signature="testHappyPathSearch()[pri:1, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:11 IDT" name="testHappyPathSearch" finished-at="2026-06-04T17:10:19 IDT" duration-ms="7294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHappyPathSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:19 IDT" name="tearDown" finished-at="2026-06-04T17:10:19 IDT" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:19 IDT" name="setUp" finished-at="2026-06-04T17:10:20 IDT" duration-ms="818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="prepareTestEnvironment()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:20 IDT" name="prepareTestEnvironment" finished-at="2026-06-04T17:10:21 IDT" duration-ms="1211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTestEnvironment -->
+        <test-method signature="testCaseInsensitiveSearch()[pri:2, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:21 IDT" name="testCaseInsensitiveSearch" finished-at="2026-06-04T17:10:29 IDT" duration-ms="8345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseInsensitiveSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:29 IDT" name="tearDown" finished-at="2026-06-04T17:10:29 IDT" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:29 IDT" name="setUp" finished-at="2026-06-04T17:10:30 IDT" duration-ms="834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="prepareTestEnvironment()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:30 IDT" name="prepareTestEnvironment" finished-at="2026-06-04T17:10:31 IDT" duration-ms="1124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTestEnvironment -->
+        <test-method signature="testPartialKeywordSearch()[pri:3, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:31 IDT" name="testPartialKeywordSearch" finished-at="2026-06-04T17:10:40 IDT" duration-ms="8285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPartialKeywordSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:40 IDT" name="tearDown" finished-at="2026-06-04T17:10:40 IDT" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:40 IDT" name="setUp" finished-at="2026-06-04T17:10:40 IDT" duration-ms="798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="prepareTestEnvironment()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:40 IDT" name="prepareTestEnvironment" finished-at="2026-06-04T17:10:42 IDT" duration-ms="1145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTestEnvironment -->
+        <test-method signature="testSpecialCharacterSearch()[pri:4, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:42 IDT" name="testSpecialCharacterSearch" finished-at="2026-06-04T17:10:49 IDT" duration-ms="7147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSpecialCharacterSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:49 IDT" name="tearDown" finished-at="2026-06-04T17:10:49 IDT" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:49 IDT" name="setUp" finished-at="2026-06-04T17:10:50 IDT" duration-ms="753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="prepareTestEnvironment()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:50 IDT" name="prepareTestEnvironment" finished-at="2026-06-04T17:10:51 IDT" duration-ms="1118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTestEnvironment -->
+        <test-method signature="testInvalidSearchQuery()[pri:5, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:51 IDT" name="testInvalidSearchQuery" finished-at="2026-06-04T17:10:58 IDT" duration-ms="7551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidSearchQuery -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3]" started-at="2026-06-04T17:10:58 IDT" name="tearDown" finished-at="2026-06-04T17:10:58 IDT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- solo.fadi.imdb_automation_project.SearchWorkflowTest -->
+      <class name="solo.fadi.imdb_automation_project.ChartSortingWorkflowTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:09:19 IDT" name="setUp" finished-at="2026-06-04T17:09:22 IDT" duration-ms="2966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testReleaseDateSorting()[pri:1, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:09:22 IDT" name="testReleaseDateSorting" finished-at="2026-06-04T17:09:33 IDT" duration-ms="11240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReleaseDateSorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:09:33 IDT" name="tearDown" finished-at="2026-06-04T17:09:33 IDT" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:09:33 IDT" name="setUp" finished-at="2026-06-04T17:09:34 IDT" duration-ms="838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGridRowCompleteness()[pri:2, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:09:34 IDT" name="testGridRowCompleteness" finished-at="2026-06-04T17:09:39 IDT" duration-ms="5570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGridRowCompleteness -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:09:39 IDT" name="tearDown" finished-at="2026-06-04T17:09:40 IDT" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:09:40 IDT" name="setUp" finished-at="2026-06-04T17:09:40 IDT" duration-ms="800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAlphabeticalSorting()[pri:3, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:09:40 IDT" name="testAlphabeticalSorting" finished-at="2026-06-04T17:09:49 IDT" duration-ms="8588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAlphabeticalSorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:09:49 IDT" name="tearDown" finished-at="2026-06-04T17:09:49 IDT" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:09:49 IDT" name="setUp" finished-at="2026-06-04T17:09:50 IDT" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSortDirectionToggle()[pri:4, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:09:50 IDT" name="testSortDirectionToggle" finished-at="2026-06-04T17:10:00 IDT" duration-ms="10114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortDirectionToggle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:10:00 IDT" name="tearDown" finished-at="2026-06-04T17:10:00 IDT" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:10:00 IDT" name="setUp" finished-at="2026-06-04T17:10:01 IDT" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeepLinkNavigation()[pri:5, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:10:01 IDT" name="testDeepLinkNavigation" finished-at="2026-06-04T17:10:09 IDT" duration-ms="8319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeepLinkNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@459e9125]" started-at="2026-06-04T16:54:44 IDT" name="tearDown" finished-at="2026-06-04T16:54:44 IDT" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e]" started-at="2026-06-04T17:10:09 IDT" name="tearDown" finished-at="2026-06-04T17:10:09 IDT" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- solo.fadi.imdb_automation_project.ChartSortingWorkflowTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Workflow Executions -->
+  </suite> <!-- IMDb Automation Test Suite -->
 </testng-results>
