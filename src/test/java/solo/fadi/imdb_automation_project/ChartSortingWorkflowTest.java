@@ -6,60 +6,71 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class ChartSortingWorkflowTest extends BaseTest {
-
-    @Test(priority = 1, description = "TC 2.1: Rating Sort State vs. Release Date Sort State")
+	
+	//Change sorting from top ranked to released date
+    @Test(priority = 1)
     public void testReleaseDateSorting() {
         ImdbPage imdb = new ImdbPage(driver, wait);
         imdb.navigateToTop250Chart();
         
         String originalTopMovie = imdb.getTopRatedMovieName();
+        System.out.println(originalTopMovie);
         imdb.sortChartByReleaseDate();
         String sortedTopMovie = imdb.getTopRatedMovieName();
-        
+        System.out.println(sortedTopMovie);
         Assert.assertNotEquals(originalTopMovie, sortedTopMovie, "Sorting by Release Date failed to alter list state.");
     }
-
-    @Test(priority = 2, description = "TC 2.2: Top 250 List Grid Completeness")
+    
+    //verify the top 250 list shows exactly 250 movies
+    @Test(priority = 2)
     public void testGridRowCompleteness() {
         ImdbPage imdb = new ImdbPage(driver, wait);
         imdb.navigateToTop250Chart();
-        
         int totalRows = imdb.getChartRowsCount();
         Assert.assertEquals(totalRows, 250, "Top Rated grid structure does not contain exactly 250 entries!");
     }
 
-    @Test(priority = 3, description = "TC 2.3: Alphabetical Sorting Order Verification")
+    //verify the list is sorted alphabetically
+    @Test(priority = 3)
     public void testAlphabeticalSorting() {
         ImdbPage imdb = new ImdbPage(driver, wait);
         imdb.navigateToTop250Chart();
         imdb.sortChartAlphabetically();
         
-        List<WebElement> topThree = imdb.getTopThreeMovieElements();
-        Assert.assertTrue(topThree.size() >= 3, "Failed to scrape top records.");
-        System.out.println("Top Alphabetical Movie: " + topThree.get(0).getText());
+        List<WebElement> topTen = imdb.getTopTenMovieElements(); 
+        Assert.assertTrue(topTen.size() >= 10, "Failed to scrape top 10 records.");
+        
+        System.out.println("--- Top 10 Alphabetical Movies ---");
+        for (WebElement movie : topTen) {
+            System.out.println(movie.getText());
+        }
     }
 
-    @Test(priority = 4, description = "TC 2.4: List Direction Toggle (Ascending vs. Descending)")
+    //verify clicking the sort direction button flips the list order
+    @Test(priority = 4)
     public void testSortDirectionToggle() {
         ImdbPage imdb = new ImdbPage(driver, wait);
         imdb.navigateToTop250Chart();
-        
         String normalFirstMovie = imdb.getTopRatedMovieName();
         imdb.toggleSortDirection();
-        String invertedFirstMovie = imdb.getTopRatedMovieName();
-        
-        Assert.assertNotEquals(normalFirstMovie, invertedFirstMovie, "Toggling sort order layout didn't invert data rows.");
+        String invertedLastMovie = imdb.getLastMovieName();
+        System.out.println("Original First: " + normalFirstMovie);
+        System.out.println("Inverted Last: " + invertedLastMovie);
+        Assert.assertEquals(normalFirstMovie, invertedLastMovie, "The top-rated movie did not move to the last position after toggling sort direction.");
     }
 
-    @Test(priority = 5, description = "TC 2.5: Deep Navigation Link Integrity from List")
+    //verify clicking on a movie from the top 250 list navigates to it's page
+    @Test(priority = 5)
     public void testDeepLinkNavigation() {
         ImdbPage imdb = new ImdbPage(driver, wait);
         imdb.navigateToTop250Chart();
-        
-        String expectedTitleSnippet = imdb.clickFifthMovieAndGetTitle();
+        int randomIndex = new java.util.Random().nextInt(250); 
+        String expectedTitle = imdb.clickMovieByIndexAndGetTitle(randomIndex);
         String actualLandingTitle = imdb.getMovieTitleText();
-        
-        Assert.assertTrue(actualLandingTitle.contains(expectedTitleSnippet), 
-            "Target profile title '" + actualLandingTitle + "' did not match chart entry snippet: '" + expectedTitleSnippet + "'");
+        System.out.println("Testing Movie Index: " + randomIndex);
+        System.out.println("Expected (Chart): " + expectedTitle);
+        System.out.println("Actual (Landing): " + actualLandingTitle);
+        Assert.assertTrue(actualLandingTitle.contains(expectedTitle), 
+            "The landing page title '" + actualLandingTitle + "' did not match the clicked chart movie title '" + expectedTitle + "'!");
     }
 }

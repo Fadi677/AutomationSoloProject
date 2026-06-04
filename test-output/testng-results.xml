@@ -2,28 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-03T21:24:15 IDT" name="Default suite" finished-at="2026-06-03T21:24:23 IDT" duration-ms="7593">
+  <suite started-at="2026-06-04T16:54:33 IDT" name="Default suite" finished-at="2026-06-04T16:54:44 IDT" duration-ms="11228">
     <groups>
     </groups>
-    <test started-at="2026-06-03T21:24:15 IDT" name="Default test" finished-at="2026-06-03T21:24:23 IDT" duration-ms="7593">
-      <class name="solo.fadi.imdb_automation_project.SearchWorkflowTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@128d2484]" started-at="2026-06-03T21:24:16 IDT" name="setUp" finished-at="2026-06-03T21:24:17 IDT" duration-ms="1232" status="PASS">
+    <test started-at="2026-06-04T16:54:33 IDT" name="Default test" finished-at="2026-06-04T16:54:44 IDT" duration-ms="11228">
+      <class name="solo.fadi.imdb_automation_project.ChartSortingWorkflowTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@459e9125]" started-at="2026-06-04T16:54:33 IDT" name="setUp" finished-at="2026-06-04T16:54:34 IDT" duration-ms="1241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="prepareTestEnvironment()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@128d2484]" started-at="2026-06-03T21:24:17 IDT" name="prepareTestEnvironment" finished-at="2026-06-03T21:24:19 IDT" duration-ms="1824" status="PASS">
+        <test-method signature="testDeepLinkNavigation()[pri:5, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@459e9125]" started-at="2026-06-04T16:54:34 IDT" name="testDeepLinkNavigation" finished-at="2026-06-04T16:54:44 IDT" duration-ms="9844" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- prepareTestEnvironment -->
-        <test-method signature="testInvalidSearchQuery()[pri:5, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@128d2484]" started-at="2026-06-03T21:24:19 IDT" name="testInvalidSearchQuery" finished-at="2026-06-03T21:24:23 IDT" duration-ms="4394" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidSearchQuery -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.SearchWorkflowTest@128d2484]" started-at="2026-06-03T21:24:23 IDT" name="tearDown" finished-at="2026-06-03T21:24:23 IDT" duration-ms="114" status="PASS">
+        </test-method> <!-- testDeepLinkNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@459e9125]" started-at="2026-06-04T16:54:44 IDT" name="tearDown" finished-at="2026-06-04T16:54:44 IDT" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- solo.fadi.imdb_automation_project.SearchWorkflowTest -->
+      </class> <!-- solo.fadi.imdb_automation_project.ChartSortingWorkflowTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
