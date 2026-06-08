@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="solo.fadi.imdb_automation_project.ChartSortingWorkflowTest">
+      <class name="solo.fadi.imdb_automation_project.GuestBoxOfficeWorkflowTest">
         <methods>
-          <include name="testDeepLinkNavigation"/>
-          <include name="testAlphabeticalSorting"/>
-          <include name="testReleaseDateSorting"/>
           <include name="setUp"/>
-          <include name="testSortDirectionToggle"/>
+          <include name="testVerifyRankFormattingInTitle"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- solo.fadi.imdb_automation_project.ChartSortingWorkflowTest -->
+      </class> <!-- solo.fadi.imdb_automation_project.GuestBoxOfficeWorkflowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

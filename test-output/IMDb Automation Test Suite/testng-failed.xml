@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [IMDb Automation Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Workflow Executions(failed)">
+    <classes>
+      <class name="solo.fadi.imdb_automation_project.ChartSortingWorkflowTest">
+        <methods>
+          <include name="testDeepLinkNavigation"/>
+          <include name="testAlphabeticalSorting"/>
+          <include name="testReleaseDateSorting"/>
+          <include name="setUp"/>
+          <include name="testSortDirectionToggle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- solo.fadi.imdb_automation_project.ChartSortingWorkflowTest -->
+    </classes>
+  </test> <!-- Workflow Executions(failed) -->
+</suite> <!-- Failed suite [IMDb Automation Test Suite] -->

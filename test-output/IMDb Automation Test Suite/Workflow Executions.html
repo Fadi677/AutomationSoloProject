@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Workflow Executions</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 04 22:07:32 IDT 2026</td>
+<td>Started on:</td><td>Fri Jun 05 11:55:21 IDT 2026</td>
 </tr>
-<tr><td>Total time:</td><td>93 seconds (93887 ms)</td>
+<tr><td>Total time:</td><td>108 seconds (108696 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,202 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testDeepLinkNavigation()'><b>testDeepLinkNavigation</b><br>Test class: solo.fadi.imdb_automation_project.ChartSortingWorkflowTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of elements found by By.cssSelector: div.cli-title h3.ipc-title__text to be &quot;250&quot;. Current number: &quot;0&quot; (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Mega\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59172}, goog:processID: 16604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59172/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b85e4c86424517eb48bb687343b4b09
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at solo.fadi.imdb_automation_project.ImdbPage.clickMovieByIndexAndGetTitle(ImdbPage.java:146)
+	at solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testDeepLinkNavigation(ChartSortingWorkflowTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace339788561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace339788561'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of elements found by By.cssSelector: div.cli-title h3.ipc-title__text to be &quot;250&quot;. Current number: &quot;0&quot; (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Mega\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59172}, goog:processID: 16604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59172/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b85e4c86424517eb48bb687343b4b09
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at solo.fadi.imdb_automation_project.ImdbPage.clickMovieByIndexAndGetTitle(ImdbPage.java:146)
+	at solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testDeepLinkNavigation(ChartSortingWorkflowTest.java:68)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>11</td>
+<td>solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e</td></tr>
+<tr>
+<td title='solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testAlphabeticalSorting()'><b>testAlphabeticalSorting</b><br>Test class: solo.fadi.imdb_automation_project.ChartSortingWorkflowTest</td>
+<td><div><pre>java.lang.AssertionError: Failed to scrape top 10 records. expected [true] but found [false]
+	at solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testAlphabeticalSorting(ChartSortingWorkflowTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1043317832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1043317832'><pre>java.lang.AssertionError: Failed to scrape top 10 records. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testAlphabeticalSorting(ChartSortingWorkflowTest.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>9</td>
+<td>solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e</td></tr>
+<tr>
+<td title='solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testReleaseDateSorting()'><b>testReleaseDateSorting</b><br>Test class: solo.fadi.imdb_automation_project.ChartSortingWorkflowTest</td>
+<td><div><pre>java.lang.AssertionError: Sorting by Release Date failed to alter list state. did not expect [Chart insights] but found [Chart insights]
+	at solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testReleaseDateSorting(ChartSortingWorkflowTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1971152916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1971152916'><pre>java.lang.AssertionError: Sorting by Release Date failed to alter list state. did not expect [Chart insights] but found [Chart insights]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failEquals(Assert.java:1582)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+	at org.testng.Assert.assertNotEquals(Assert.java:2201)
+	at solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testReleaseDateSorting(ChartSortingWorkflowTest.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>11</td>
+<td>solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e</td></tr>
+<tr>
+<td title='solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testSortDirectionToggle()'><b>testSortDirectionToggle</b><br>Test class: solo.fadi.imdb_automation_project.ChartSortingWorkflowTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class, &apos;cli-title&apos;)]//h3[@class=&apos;ipc-title__text&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Mega\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59103}, goog:processID: 11104, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59103/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 69783e98daa2e0bd54008d5e83a96a2f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at solo.fadi.imdb_automation_project.ImdbPage.getLastMovieName(ImdbPage.java:133)
+	at solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testSortDirectionToggle(ChartSortingWorkflowTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace948424584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace948424584'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class, &apos;cli-title&apos;)]//h3[@class=&apos;ipc-title__text&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Mega\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59103}, goog:processID: 11104, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59103/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 69783e98daa2e0bd54008d5e83a96a2f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at solo.fadi.imdb_automation_project.ImdbPage.getLastMovieName(ImdbPage.java:133)
+	at solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testSortDirectionToggle(ChartSortingWorkflowTest.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>20</td>
+<td>solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,20 +272,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='solo.fadi.imdb_automation_project.SearchWorkflowTest.testPartialKeywordSearch()'><b>testPartialKeywordSearch</b><br>Test class: solo.fadi.imdb_automation_project.SearchWorkflowTest</td>
+<td></td>
+<td>4</td>
+<td>solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3</td></tr>
+<tr>
 <td title='solo.fadi.imdb_automation_project.SearchWorkflowTest.testCaseInsensitiveSearch()'><b>testCaseInsensitiveSearch</b><br>Test class: solo.fadi.imdb_automation_project.SearchWorkflowTest</td>
 <td></td>
 <td>6</td>
 <td>solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3</td></tr>
 <tr>
-<td title='solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testSortDirectionToggle()'><b>testSortDirectionToggle</b><br>Test class: solo.fadi.imdb_automation_project.ChartSortingWorkflowTest</td>
+<td title='solo.fadi.imdb_automation_project.SearchWorkflowTest.testSpecialCharacterSearch()'><b>testSpecialCharacterSearch</b><br>Test class: solo.fadi.imdb_automation_project.SearchWorkflowTest</td>
 <td></td>
-<td>10</td>
-<td>solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e</td></tr>
-<tr>
-<td title='solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testDeepLinkNavigation()'><b>testDeepLinkNavigation</b><br>Test class: solo.fadi.imdb_automation_project.ChartSortingWorkflowTest</td>
-<td></td>
-<td>8</td>
-<td>solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e</td></tr>
+<td>7</td>
+<td>solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3</td></tr>
 <tr>
 <td title='solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testGridRowCompleteness()'><b>testGridRowCompleteness</b><br>Test class: solo.fadi.imdb_automation_project.ChartSortingWorkflowTest</td>
 <td></td>
@@ -98,32 +294,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='solo.fadi.imdb_automation_project.SearchWorkflowTest.testInvalidSearchQuery()'><b>testInvalidSearchQuery</b><br>Test class: solo.fadi.imdb_automation_project.SearchWorkflowTest</td>
 <td></td>
-<td>3</td>
+<td>4</td>
 <td>solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3</td></tr>
-<tr>
-<td title='solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testAlphabeticalSorting()'><b>testAlphabeticalSorting</b><br>Test class: solo.fadi.imdb_automation_project.ChartSortingWorkflowTest</td>
-<td></td>
-<td>9</td>
-<td>solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e</td></tr>
 <tr>
 <td title='solo.fadi.imdb_automation_project.SearchWorkflowTest.testHappyPathSearch()'><b>testHappyPathSearch</b><br>Test class: solo.fadi.imdb_automation_project.SearchWorkflowTest</td>
 <td></td>
 <td>6</td>
-<td>solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3</td></tr>
-<tr>
-<td title='solo.fadi.imdb_automation_project.ChartSortingWorkflowTest.testReleaseDateSorting()'><b>testReleaseDateSorting</b><br>Test class: solo.fadi.imdb_automation_project.ChartSortingWorkflowTest</td>
-<td></td>
-<td>9</td>
-<td>solo.fadi.imdb_automation_project.ChartSortingWorkflowTest@7c7b252e</td></tr>
-<tr>
-<td title='solo.fadi.imdb_automation_project.SearchWorkflowTest.testPartialKeywordSearch()'><b>testPartialKeywordSearch</b><br>Test class: solo.fadi.imdb_automation_project.SearchWorkflowTest</td>
-<td></td>
-<td>4</td>
-<td>solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3</td></tr>
-<tr>
-<td title='solo.fadi.imdb_automation_project.SearchWorkflowTest.testSpecialCharacterSearch()'><b>testSpecialCharacterSearch</b><br>Test class: solo.fadi.imdb_automation_project.SearchWorkflowTest</td>
-<td></td>
-<td>9</td>
 <td>solo.fadi.imdb_automation_project.SearchWorkflowTest@43bc63a3</td></tr>
 </table><p>
 </body>
